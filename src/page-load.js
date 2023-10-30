@@ -17,9 +17,15 @@ function createMainContainer() {
   const mainContainer = document.createElement("main");
   mainContainer.setAttribute("id", "main-container");
 
+  const description = document.createElement("p");
+  description.setAttribute("id", "description")
+  description.textContent = 'made with love and passion'
+
   const mainImage = new Image();
+  mainImage.setAttribute("id", "main-image")
   mainImage.src = freshPastaImage;
 
+  mainContainer.appendChild(description)
   mainContainer.appendChild(mainImage);
 
   return mainContainer;
