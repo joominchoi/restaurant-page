@@ -2,6 +2,11 @@ h1 {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+}
+
 #main-image {
   height: 500px;
   width: auto;
