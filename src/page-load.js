@@ -1,4 +1,4 @@
-import freshPastaImage from './images/fresh-pasta.jpg'
+import loadHome from "./home";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -21,24 +21,25 @@ function createNav() {
   homeButton.classList.add("nav-button");
   homeButton.textContent = "Home";
   homeButton.addEventListener("click", (e) => {
-    if (e.target.classList.contains("active")) return;
     console.log("Home button has been clicked")
+    if (e.target.classList.contains("active")) return;
+    loadHome();
   });
 
   const menuButton = document.createElement("button");
   menuButton.classList.add("nav-button");
   menuButton.textContent = "Menu";
   menuButton.addEventListener("click", (e) => {
-    if (e.target.classList.contains("active")) return;
     console.log("Menu button has been clicked")
+    if (e.target.classList.contains("active")) return;
   });
 
   const contactButton = document.createElement("button");
   contactButton.classList.add("nav-button");
   contactButton.textContent = "Contact";
   contactButton.addEventListener("click", (e) => {
-    if (e.target.classList.contains("active")) return;
     console.log("Contact button has been clicked")
+    if (e.target.classList.contains("active")) return;
   });
 
   nav.appendChild(homeButton);
@@ -51,17 +52,6 @@ function createNav() {
 function createMainContainer() {
   const mainContainer = document.createElement("main");
   mainContainer.setAttribute("id", "main-container");
-
-  const description = document.createElement("p");
-  description.setAttribute("id", "description")
-  description.textContent = 'made with love and passion'
-
-  const mainImage = new Image();
-  mainImage.setAttribute("id", "main-image")
-  mainImage.src = freshPastaImage;
-
-  mainContainer.appendChild(description)
-  mainContainer.appendChild(mainImage);
 
   return mainContainer;
 }
