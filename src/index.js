@@ -1,1 +1,3 @@
-console.log("Testing")
+import initializeWebsite from './page-load';
+
+initializeWebsite();
