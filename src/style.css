@@ -11,6 +11,11 @@ nav {
   cursor: pointer;
 }
 
+
+.active {
+  display: block; /* Show the active content */
+}
+
 #home {
   display: flex;
   flex-direction: column;

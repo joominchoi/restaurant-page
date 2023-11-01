@@ -13,6 +13,7 @@ function createMenu() {
 
 function loadMenu() {
   const main = document.getElementById("main-container");
+  main.textContent = "";
   main.appendChild(createMenu());
 }
 

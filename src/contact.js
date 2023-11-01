@@ -13,6 +13,7 @@ function createContact() {
 
 function loadContact() {
   const main = document.getElementById("main-container");
+  main.textContent = "";
   main.appendChild(createContact());
 }
 

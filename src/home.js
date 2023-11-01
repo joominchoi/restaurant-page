@@ -20,6 +20,7 @@ function createHome() {
 
 function loadHome() {
   const main = document.getElementById("main-container");
+  main.textContent = "";
   main.appendChild(createHome());
 }
 
