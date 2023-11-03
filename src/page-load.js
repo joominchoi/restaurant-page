@@ -92,6 +92,8 @@ function initializeWebsite() {
   content.appendChild(createHeader());
   content.appendChild(createMainContainer());
   content.appendChild(createFooter());
+
+  loadHome(); 
 }
 
 export default initializeWebsite;
