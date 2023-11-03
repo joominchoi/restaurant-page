@@ -5,6 +5,8 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 40pt;
+  font-weight: 400;
 }
 
 nav {
@@ -16,7 +18,9 @@ nav {
   cursor: pointer;
 }
 
-#home {
+#home,
+#menu,
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,18 +29,6 @@ nav {
 #home-image {
   height: 500px;
   width: auto;
-}
-
-#menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #creator {
