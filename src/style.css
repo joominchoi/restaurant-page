@@ -12,10 +12,28 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .nav-button {
   cursor: pointer;
+
+  background-color: transparent;
+  border-style: none;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20pt;
+
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-button:hover {
+  border-bottom: 2px solid #000000;
+}
+
+.nav-button.active {
+  border-bottom: 2px solid #000000;
 }
 
 #home,

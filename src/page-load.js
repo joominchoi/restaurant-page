@@ -21,6 +21,7 @@ function createNav() {
 
   const homeButton = document.createElement("button");
   homeButton.classList.add("nav-button");
+  homeButton.setAttribute("id", "home-button")
   homeButton.textContent = "Home";
   homeButton.addEventListener("click", (e) => {
     console.log("Home button has been clicked")
@@ -93,6 +94,7 @@ function initializeWebsite() {
   content.appendChild(createMainContainer());
   content.appendChild(createFooter());
 
+  setActiveButton(document.getElementById('home-button'))
   loadHome(); 
 }
 
