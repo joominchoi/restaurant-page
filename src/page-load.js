@@ -1,6 +1,7 @@
 import loadHome from "./home";
-import loadMenu from "./menu";
+import loadfood from "./food";
 import loadContact from "./contact";
+import loaddrinks from "./drinks";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -29,13 +30,22 @@ function createNav() {
     loadHome();
   });
 
-  const menuButton = document.createElement("button");
-  menuButton.classList.add("nav-button");
-  menuButton.textContent = "Menu";
-  menuButton.addEventListener("click", (e) => {
-    console.log("Menu button has been clicked")
-    setActiveButton(menuButton)
-    loadMenu();
+  const foodButton = document.createElement("button");
+  foodButton.classList.add("nav-button");
+  foodButton.textContent = "Food";
+  foodButton.addEventListener("click", (e) => {
+    console.log("Food button has been clicked")
+    setActiveButton(foodButton)
+    loadfood();
+  });
+
+  const drinksButton = document.createElement("button");
+  drinksButton.classList.add("nav-button");
+  drinksButton.textContent = "Drinks";
+  drinksButton.addEventListener("click", (e) => {
+    console.log("Drinks button has been clicked")
+    setActiveButton(drinksButton)
+    loaddrinks();
   });
 
   const contactButton = document.createElement("button");
@@ -48,7 +58,8 @@ function createNav() {
   });
 
   nav.appendChild(homeButton);
-  nav.appendChild(menuButton);
+  nav.appendChild(foodButton);
+  nav.appendChild(drinksButton);
   nav.appendChild(contactButton);
 
   return nav;
