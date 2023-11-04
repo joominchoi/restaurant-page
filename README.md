@@ -13,6 +13,7 @@ Practicing DOM manipulation by dynamically rendering a simple restaurant homepag
 point in the recapping section below. I believe this is achievable but I think it will be
 overengineering and I kept the removal and addition of the 'active' classname of the active tab
 just for reference.
+- Double check, triple check variable names, file names, classnames, ids etc when program is not running is expected
 
 ## Recapping
 - Removing content from one tab to be replaced by content from another tab does not have to be
