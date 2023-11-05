@@ -23,7 +23,7 @@ function createNav() {
   const homeButton = document.createElement("button");
   homeButton.classList.add("nav-button");
   homeButton.setAttribute("id", "home-button")
-  homeButton.textContent = "Home";
+  homeButton.textContent = "home";
   homeButton.addEventListener("click", (e) => {
     console.log("Home button has been clicked")
     setActiveButton(homeButton)
@@ -32,7 +32,7 @@ function createNav() {
 
   const foodButton = document.createElement("button");
   foodButton.classList.add("nav-button");
-  foodButton.textContent = "Food";
+  foodButton.textContent = "food";
   foodButton.addEventListener("click", (e) => {
     console.log("Food button has been clicked")
     setActiveButton(foodButton)
@@ -41,7 +41,7 @@ function createNav() {
 
   const drinksButton = document.createElement("button");
   drinksButton.classList.add("nav-button");
-  drinksButton.textContent = "Drinks";
+  drinksButton.textContent = "drinks";
   drinksButton.addEventListener("click", (e) => {
     console.log("Drinks button has been clicked")
     setActiveButton(drinksButton)
@@ -50,7 +50,7 @@ function createNav() {
 
   const contactButton = document.createElement("button");
   contactButton.classList.add("nav-button");
-  contactButton.textContent = "Contact";
+  contactButton.textContent = "contact";
   contactButton.addEventListener("click", (e) => {
     console.log("Contact button has been clicked")
     setActiveButton(contactButton)
