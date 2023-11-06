@@ -2,6 +2,7 @@ import loadHome from "./home";
 import loadfood from "./food";
 import loadContact from "./contact";
 import loaddrinks from "./drinks";
+import githubIcon from "./images/github-logo.svg"
 
 function createHeader() {
   const header = document.createElement("header");
@@ -89,11 +90,24 @@ function createFooter() {
   const footer = document.createElement("footer");
   footer.setAttribute("id", "footer");
 
+  const footerSignature = document.createElement("div")
+  footerSignature.setAttribute("id", "footer-signature")
+
   const creator = document.createElement("p");
   creator.setAttribute("id", "creator");
-  creator.textContent = "Created by JooMin Choi";
+  creator.textContent = "Created by jooomin";
 
-  footer.append(creator);
+  const githubLink = document.createElement("a")
+  githubLink.setAttribute("href", "https://github.com/jooomin")
+
+  const githubLogo = new Image();
+  githubLogo.setAttribute("id", "github-logo")
+  githubLogo.src = githubIcon
+
+  footer.append(footerSignature);
+  footerSignature.append(creator);
+  footerSignature.append(githubLink)
+  githubLink.append(githubLogo)
 
   return footer;
 }
