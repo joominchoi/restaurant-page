@@ -2,6 +2,8 @@
 
 Practicing DOM manipulation by dynamically rendering a simple restaurant homepage
 
+Check out the project [here](jooomin.github.io/restaurant-page/)
+
 **Course reference pages:** \
 [Project: Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
