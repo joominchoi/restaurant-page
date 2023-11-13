@@ -65,7 +65,7 @@ footer {
 #footer-signature {
   display: flex;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
 
   gap: 10px;
 }
