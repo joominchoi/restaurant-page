@@ -6,10 +6,8 @@ import githubIcon from "./images/github-logo.svg"
 
 function createHeader() {
   const header = document.createElement("header");
-  header.setAttribute("id", "header");
 
   const restaurantName = document.createElement("h1");
-  header.setAttribute("id", "restaurant-name");
   restaurantName.textContent = "flour and grape";
 
   header.appendChild(restaurantName);
@@ -88,7 +86,6 @@ function createMainContainer() {
 
 function createFooter() {
   const footer = document.createElement("footer");
-  footer.setAttribute("id", "footer");
 
   const footerSignature = document.createElement("div")
   footerSignature.setAttribute("id", "footer-signature")

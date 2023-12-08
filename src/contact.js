@@ -3,7 +3,7 @@ function createContact() {
   contact.setAttribute("id", "contact");
 
   const description = document.createElement("p");
-  description.setAttribute("id", "contact-description")
+  description.classList.add('description');
   description.textContent = 'how to reach us'
 
   contact.appendChild(description)

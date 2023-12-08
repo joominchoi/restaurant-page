@@ -3,8 +3,8 @@ function createFood() {
   food.setAttribute("id", "food");
 
   const description = document.createElement("p");
-  description.setAttribute("id", "food-description")
-  description.textContent = 'a list of our irresistable dishes'
+  description.classList.add('description');
+  description.textContent = 'a list of our irresistable dishes';
 
   food.appendChild(description)
 

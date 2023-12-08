@@ -5,7 +5,7 @@ function createHome() {
   home.setAttribute("id", "home");
 
   const description = document.createElement("p");
-  description.setAttribute("id", "home-description")
+  description.classList.add('description');
   description.textContent = 'made with love and passion'
 
   const homeImage = new Image();

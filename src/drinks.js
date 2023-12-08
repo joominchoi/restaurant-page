@@ -3,7 +3,7 @@ function createDrinks() {
   drinks.setAttribute("id", "drinks");
 
   const description = document.createElement("p");
-  description.setAttribute("id", "drinks-description")
+  description.classList.add('description');
   description.textContent = 'a list of our drinks'
 
   drinks.appendChild(description)
