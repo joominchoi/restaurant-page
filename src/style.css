@@ -45,6 +45,15 @@ nav {
   align-items: center;
 }
 
+.description {
+  font-style: italic;
+}
+
+.category {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 #home-image {
   height: 70vh;
   width: auto;
