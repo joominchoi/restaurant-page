@@ -92,10 +92,10 @@ function createFooter() {
 
   const creator = document.createElement("p");
   creator.setAttribute("id", "creator");
-  creator.textContent = "Created by jooomin";
+  creator.textContent = "Created by joominchoi";
 
   const githubLink = document.createElement("a")
-  githubLink.setAttribute("href", "https://github.com/jooomin")
+  githubLink.setAttribute("href", "https://github.com/joominchoi")
 
   const githubLogo = new Image();
   githubLogo.setAttribute("id", "github-logo")
