@@ -7,7 +7,10 @@ Check out the project [here](https://jooomin.github.io/restaurant-page/)
 **Course reference pages:** \
 [Project: Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
-## Thoughts
+- If you're in a development environment and want to watch for changes and automatically trigger a rebuild
+  - *npx webpack --watch*
+- Then run 
+  - *open dist/index.html*
 
 ## Learnings
 - Setting active and inactive components by the addition and removal of classes
@@ -21,5 +24,3 @@ just for reference.
 - Removing content from one tab to be replaced by content from another tab does not have to be
 overcomplicated or overengineered. It can be as simple as setting the main.textContent = "" and then
 appending desired content with  main.appendChild(createHome())
-
-## WIP
