@@ -11,6 +11,8 @@ Check out the [project](https://joominchoi.github.io/restaurant-page/)
   - *npx webpack --watch*
 - Then run 
   - *open dist/index.html*
+- To update project's live preview
+  - *npm run UpdateWebsite*
 
 ## Learnings
 - Setting active and inactive components by the addition and removal of classes
